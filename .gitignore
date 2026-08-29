@@ -1,0 +1,10 @@
+.next/
+.next-*/
+node_modules/
+.contact-inbox/
+.env*.local
+.chrome-debug-profile/
+.unlazy/
+*.log
+*.err
+tsconfig.tsbuildinfo

@@ -1,0 +1,157 @@
+/*
+  EXACT visual styling extracted from the last approved arena.
+  Arena/layout styles are intentionally not included.
+*/
+
+:root {
+  --exact-cursor-ease: cubic-bezier(.16,1,.3,1);
+}
+
+html.exact-cursor-on,
+html.exact-cursor-on * {
+  cursor: none !important;
+}
+
+.exact-directional-cursor,
+.exact-cursor-state-label,
+.exact-cursor-ibeam,
+.exact-cursor-ripple {
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+.exact-directional-cursor {
+  width: 32px;
+  height: 32px;
+  margin: -16px 0 0 -16px;
+
+  z-index: 999999;
+
+  opacity: 0;
+
+  transform-origin: 50% 50%;
+  will-change: transform, opacity;
+}
+
+.exact-directional-cursor.visible {
+  opacity: 1;
+}
+
+.exact-directional-cursor img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  user-select: none;
+  -webkit-user-drag: none;
+
+  pointer-events: none;
+
+  transform: translateZ(0);
+}
+
+.exact-cursor-state-label {
+  z-index: 1000000;
+
+  transform: translate(-50%,-50%);
+
+  color: #f5f5ef;
+
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  font-size: 8px;
+  font-weight: 800;
+  line-height: 1;
+
+  letter-spacing: .17em;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  opacity: 0;
+
+  will-change: transform, opacity;
+}
+
+.exact-cursor-state-label.visible {
+  opacity: 1;
+}
+
+.exact-cursor-ibeam {
+  width: 2px;
+  height: 30px;
+
+  margin: -15px 0 0 -1px;
+
+  z-index: 999998;
+
+  border-radius: 2px;
+
+  background: #f5f5ef;
+
+  opacity: 0;
+
+  will-change: transform, opacity;
+}
+
+.exact-cursor-ripple {
+  width: 10px;
+  height: 10px;
+
+  margin: -5px 0 0 -5px;
+
+  border:
+    1px solid rgba(255,255,255,.65);
+
+  border-radius: 50%;
+
+  z-index: 999990;
+
+  animation:
+    exact-cursor-ripple
+    .62s
+    var(--exact-cursor-ease)
+    forwards;
+}
+
+@keyframes exact-cursor-ripple {
+  from {
+    transform:
+      translate(var(--x),var(--y))
+      scale(.15);
+
+    opacity: .9;
+  }
+
+  to {
+    transform:
+      translate(var(--x),var(--y))
+      scale(6.5);
+
+    opacity: 0;
+  }
+}
+
+@media (pointer: coarse) {
+  html.exact-cursor-on,
+  html.exact-cursor-on * {
+    cursor: auto !important;
+  }
+
+  .exact-directional-cursor,
+  .exact-cursor-state-label,
+  .exact-cursor-ibeam {
+    display: none !important;
+  }
+}

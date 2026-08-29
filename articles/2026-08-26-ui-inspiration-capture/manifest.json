@@ -1,0 +1,124 @@
+{
+  "title": "UI Inspiration Capture: Spatial Portfolio Systems",
+  "date": "2026-08-26",
+  "captureMethod": "Codex in-app browser live-page inspection and local PNG capture",
+  "itemCount": 5,
+  "dedupeAgainst": [],
+  "items": [
+    {
+      "title": "Lusion",
+      "creator": "Lusion",
+      "sourceUrl": "https://lusion.co/",
+      "pageUrl": "https://lusion.co/",
+      "imageUrl": "https://lusion.co/",
+      "imageFile": "lusion-hero.png",
+      "videoFallbackReason": "The page uses a fixed virtual-scroll renderer and the in-app browser exposed still capture rather than local video recording.",
+      "fullPageImage": "lusion-full.png",
+      "sectionImages": [
+        { "label": "hero", "file": "sections/lusion-hero.png", "source": "lusion-full.png", "yStart": 0, "yEnd": 306, "height": 306 },
+        { "label": "middle", "file": "sections/lusion-middle.png", "source": "lusion-full.png", "yStart": 306, "yEnd": 702, "height": 396 },
+        { "label": "footer", "file": "sections/lusion-footer.png", "source": "lusion-full.png", "yStart": 702, "yEnd": 900, "height": 198 }
+      ],
+      "motionFrames": ["lusion-hero.png"],
+      "captureType": "live-site-fixed-renderer",
+      "viewport": "1440x900",
+      "why": "The primary comparison bar for a persistent spatial stage and scroll-authored camera behavior.",
+      "pattern": "Compact identity and controls frame one dominant 3D stage; major statements arrive at radically different scales.",
+      "interactionNotes": "Fixed controls, virtual scroll, animated object field, spatial stage expansion, and project-led chapter changes.",
+      "animationNotes": "Scroll changes object scale and camera crop while copy retires; motion is continuous but each chapter has one focal event.",
+      "prompt": "Build an original personal portfolio around one persistent spatial system, not a stack of visual-effect sections. Start with a complete static first frame containing a real H1, concise thesis, identity, and one action. Use one fixed real-time canvas with a deterministic scroll conductor and semantic HTML waypoints above it. At each waypoint change the camera relationship, landmark silhouette, light state, copy anchor, and information density. Keep controls compact, keyboard reachable, and stable while the world travels. Use one accent color only for active or verified state. Recompose camera endpoints for desktop, tablet, and phone. Provide a static poster, WebGL failure state, native reduced-motion story, capped DPR, shared geometry and materials, visibility pausing, and complete teardown. Avoid copying Lusion's blue, objects, layouts, identity, copy, or project treatments."
+    },
+    {
+      "title": "Dogstudio",
+      "creator": "Dogstudio",
+      "sourceUrl": "https://dogstudio.co/",
+      "pageUrl": "https://dogstudio.co/",
+      "imageUrl": "https://dogstudio.co/",
+      "imageFile": "dogstudio-hero.png",
+      "videoFallbackReason": "The in-app browser did not expose a local recording surface; full-page and viewport stills were captured after clearing the cookie overlay.",
+      "fullPageImage": "dogstudio-full.png",
+      "sectionImages": [
+        { "label": "hero", "file": "sections/dogstudio-hero.png", "source": "dogstudio-full.png", "yStart": 0, "yEnd": 1234, "height": 1234 },
+        { "label": "middle", "file": "sections/dogstudio-middle.png", "source": "dogstudio-full.png", "yStart": 1234, "yEnd": 2831, "height": 1597 },
+        { "label": "footer", "file": "sections/dogstudio-footer.png", "source": "dogstudio-full.png", "yStart": 2831, "yEnd": 3630, "height": 799 }
+      ],
+      "motionFrames": ["dogstudio-hero.png"],
+      "captureType": "live-site",
+      "viewport": "1264px wide",
+      "why": "It proves that one fearless hero composition and a direct verbal voice can carry more identity than many decorative systems.",
+      "pattern": "Editorial display type collides with one cinematic subject while navigation stays almost weightless.",
+      "interactionNotes": "Sparse controls, showreel action, project list navigation, and immersive hero staging.",
+      "animationNotes": "The strongest motion opportunity is the relationship between type and a single living focal image, not card-by-card effects.",
+      "prompt": "Create a personal portfolio with one emotionally specific hero image or 3D landmark rather than a generic abstract background. Let oversized display type overlap the subject in a controlled depth stack, keeping the accessible H1 in real HTML. Use sparse navigation, one short primary action, and a direct first-person voice. After the hero, switch to proof: selected projects with real descriptions and destinations. Change layout rhythm between the hero, project sequence, and about passage. Use slow large-scale movement for the focal subject and fast restrained response for controls. On mobile, preserve the subject's face or landmark and shorten the headline before reducing it to unreadable scale. Avoid borrowed creatures, Dogstudio's language, dramatic serif imitation, or shock copy."
+    },
+    {
+      "title": "Make Me Pulse",
+      "creator": "Make Me Pulse",
+      "sourceUrl": "https://www.makemepulse.com/",
+      "pageUrl": "https://www.makemepulse.com/",
+      "imageUrl": "https://www.makemepulse.com/",
+      "imageFile": "makemepulse-hero.png",
+      "videoFallbackReason": "The in-app browser supported local still capture but no local video export for this session.",
+      "fullPageImage": "makemepulse-full.png",
+      "sectionImages": [
+        { "label": "hero", "file": "sections/makemepulse-hero.png", "source": "makemepulse-full.png", "yStart": 0, "yEnd": 3000, "height": 3000 },
+        { "label": "middle", "file": "sections/makemepulse-middle.png", "source": "makemepulse-full.png", "yStart": 3000, "yEnd": 6883, "height": 3883 },
+        { "label": "footer", "file": "sections/makemepulse-footer.png", "source": "makemepulse-full.png", "yStart": 6883, "yEnd": 8825, "height": 1942 }
+      ],
+      "motionFrames": ["makemepulse-hero.png"],
+      "captureType": "live-site",
+      "viewport": "1280px wide",
+      "why": "It demonstrates typography as spatial choreography and keeps tiny supporting statements attached to the words they qualify.",
+      "pattern": "Three oversized words occupy separate coordinates while microcopy acts as connective tissue.",
+      "interactionNotes": "Navigation remains conventional while the hero becomes an asymmetric poster; work cards then provide concrete destinations.",
+      "animationNotes": "Large words can enter in a clear order while small statements remain stable; the contrast creates rhythm without ornamental particles.",
+      "prompt": "Compose a portfolio hero as an asymmetric typographic poster. Place three short parts of one statement at different horizontal anchors and connect them with compact explanatory phrases. Keep no more than four semantic text elements in the first viewport and make the primary action immediately reachable. Reveal the words in reading order with 60 to 90 millisecond offsets, then keep them stable while the spatial world moves. Follow with concrete project chapters using real names, roles, summaries, and links. Reflow the poster into a deliberate vertical stack on phone screens rather than preserving desktop coordinates. Avoid duplicating Make Me Pulse's wording, exact black-white composition, logo, or typography."
+    },
+    {
+      "title": "Cuberto",
+      "creator": "Cuberto",
+      "sourceUrl": "https://cuberto.com/",
+      "pageUrl": "https://cuberto.com/",
+      "imageUrl": "https://cuberto.com/",
+      "imageFile": "cuberto-hero.png",
+      "videoFallbackReason": "The in-app browser supported full-page still capture but did not expose local video recording.",
+      "fullPageImage": "cuberto-full.png",
+      "sectionImages": [
+        { "label": "hero", "file": "sections/cuberto-hero.png", "source": "cuberto-full.png", "yStart": 0, "yEnd": 4106, "height": 4106 },
+        { "label": "middle", "file": "sections/cuberto-middle.png", "source": "cuberto-full.png", "yStart": 4106, "yEnd": 9420, "height": 5314 },
+        { "label": "footer", "file": "sections/cuberto-footer.png", "source": "cuberto-full.png", "yStart": 9420, "yEnd": 12077, "height": 2657 }
+      ],
+      "motionFrames": ["cuberto-hero.png"],
+      "captureType": "live-site",
+      "viewport": "1269px wide",
+      "why": "It keeps service clarity and selected-work legibility strong despite using large media and motion.",
+      "pattern": "A centered declarative hero moves immediately into a large project frame; sections are explicit and conversion remains clear.",
+      "interactionNotes": "Straightforward navigation, large project destinations, and conventional links preserve orientation.",
+      "animationNotes": "Motion can support media entry and typography without hiding the page's purpose or action.",
+      "prompt": "Build the portfolio so a visitor can answer who, what, proof, and next action in under ten seconds even when the 3D layer is disabled. Use one real H1, one sentence under twenty words, and one action in the opening. Give each selected project a strong title, one-sentence problem, specific system role, and real repository destination. Use large media or spatial landmarks as proof surfaces but keep links, focus, and reading order conventional. Maintain generous whitespace and a restrained type scale outside the hero. Avoid Cuberto's centered agency composition, client-logo theater, and generic service language."
+    },
+    {
+      "title": "Locomotive",
+      "creator": "Locomotive",
+      "sourceUrl": "https://locomotive.ca/en",
+      "pageUrl": "https://locomotive.ca/en",
+      "imageUrl": "https://locomotive.ca/en",
+      "imageFile": "locomotive-hero.png",
+      "videoFallbackReason": "The in-app browser exposed still capture rather than local video export; the cookie overlay was cleared before the final evidence was saved.",
+      "fullPageImage": "locomotive-full.png",
+      "sectionImages": [
+        { "label": "hero", "file": "sections/locomotive-hero.png", "source": "locomotive-full.png", "yStart": 0, "yEnd": 2078, "height": 2078 },
+        { "label": "middle", "file": "sections/locomotive-middle.png", "source": "locomotive-full.png", "yStart": 2078, "yEnd": 4768, "height": 2690 },
+        { "label": "footer", "file": "sections/locomotive-footer.png", "source": "locomotive-full.png", "yStart": 4768, "yEnd": 6113, "height": 1345 }
+      ],
+      "motionFrames": ["locomotive-hero.png"],
+      "captureType": "live-site",
+      "viewport": "1264px wide",
+      "why": "It makes navigation and utility text carry brand personality while maintaining a deep, diverse work archive.",
+      "pattern": "Identity-rich utility chrome frames a large visual hero, followed by project and culture material with changing densities.",
+      "interactionNotes": "Textual navigation behaves as part of the composition and the contact action stays persistent.",
+      "animationNotes": "The page can shift between visual spectacle, project browsing, and dense text without applying the same reveal to every block.",
+      "prompt": "Treat portfolio navigation as a designed identity surface rather than a generic glass pill. Keep a compact brand mark, plain-text waypoint links, and one persistent contact action. Use semantic anchors and update active state with aria-current. Vary section density: one cinematic opening, a structured project journey, a quieter personal notebook, and a resolved close. Let motion change pacing between those modes instead of replaying one fade-up preset. Use touch-sized actions and a collapsed active-waypoint label on phones. Avoid Locomotive's copy, colors, emoji symbols, layout, project roster, and agency voice."
+    }
+  ]
+}

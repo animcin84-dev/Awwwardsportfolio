@@ -1,0 +1,3 @@
+Place the optimized hero video here as: hero-bg.mp4
+Then run: npm run prepare:hero -- path/to/original-video.mp4
+The site has a remote Framer-video fallback if the local file is missing, but same-origin/CDN-hosted media is preferred.
