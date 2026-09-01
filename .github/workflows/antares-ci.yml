@@ -32,7 +32,7 @@ jobs:
         run: |
           mkdir -p visual-qa
           npx --yes playwright@1.55.0 screenshot --browser chromium --viewport-size="1440,1000" --full-page http://127.0.0.1:3000 visual-qa/antares-desktop.png
-          npx --yes playwright@1.55.0 screenshot --browser chromium --device="iPhone 13" --full-page http://127.0.0.1:3000 visual-qa/antares-mobile.png
+          npx --yes playwright@1.55.0 screenshot --browser chromium --viewport-size="390,844" --full-page http://127.0.0.1:3000 visual-qa/antares-mobile.png
       - uses: actions/upload-artifact@v4
         with:
           name: antares-visual-qa
