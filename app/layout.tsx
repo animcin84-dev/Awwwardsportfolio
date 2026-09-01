@@ -58,7 +58,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema).replace(/</g, "\\u003c") }} />
       </head>
-      <body className={GeistSans.className} suppressHydrationWarning>{children}</body>
+      <body className={GeistSans.className} suppressHydrationWarning>
+        <a className="antares-skip" href="#top">Skip to ANTARES mission</a>
+        {children}
+      </body>
     </html>
   );
 }
