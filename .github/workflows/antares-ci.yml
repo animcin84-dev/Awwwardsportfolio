@@ -1,15 +1,13 @@
 name: ANTARES CI
 
 on:
-  push:
-    branches: [antares-awwwards]
   pull_request:
     branches: [main]
 
 jobs:
   verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -19,3 +17,24 @@ jobs:
       - run: npm ci
       - run: npm run typecheck
       - run: npm run build
+      - name: Start production server
+        run: |
+          npm run start -- -p 3000 > /tmp/antares-next.log 2>&1 &
+          for i in {1..30}; do
+            if curl -fsS http://127.0.0.1:3000 >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/antares-next.log
+          exit 1
+      - name: Install Chromium for visual QA
+        run: npx --yes playwright@1.55.0 install --with-deps chromium
+      - name: Capture desktop and mobile
+        run: |
+          mkdir -p visual-qa
+          npx --yes playwright@1.55.0 screenshot --browser chromium --viewport-size="1440,1000" --full-page http://127.0.0.1:3000 visual-qa/antares-desktop.png
+          npx --yes playwright@1.55.0 screenshot --browser chromium --device="iPhone 13" --full-page http://127.0.0.1:3000 visual-qa/antares-mobile.png
+      - uses: actions/upload-artifact@v4
+        with:
+          name: antares-visual-qa
+          path: visual-qa/
+          retention-days: 7
