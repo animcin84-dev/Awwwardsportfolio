@@ -1,49 +1,25 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Route Not Found | Daniyal Bauyrzhan",
-  description: "This operation returned no route. Recover to Daniyal Bauyrzhan's portfolio or selected work.",
+  title: "Signal Lost | ANTARES FTC",
+  description: "This ANTARES route could not be resolved. Return to the team mission index.",
   robots: { index: false, follow: true },
 };
 
 export default function NotFound() {
   return (
-    <main className="not-found-page" id="not-found-main">
-      <a className="skip-link" href="#not-found-title">Skip to recovery</a>
-      <div className="not-found-signal" aria-hidden="true" />
-
-      <header className="not-found-header">
-        <Link href="/" className="not-found-brand" aria-label="Daniyal portfolio home" data-cursor="action" data-label="HOME ↖">
-          <Image src="/d-mark.webp" width={42} height={42} sizes="42px" alt="" priority />
-          <span>Daniyal</span>
-        </Link>
-        <p><span>404</span> SYSTEM ROUTE / UNRESOLVED</p>
+    <main style={{minHeight:"100svh",background:"#050505",color:"#f5efe8",padding:"28px",display:"flex",flexDirection:"column",justifyContent:"space-between"}}>
+      <header style={{display:"flex",justifyContent:"space-between",fontSize:11,letterSpacing:".14em"}}>
+        <Link href="/">✦ ANTARES</Link><span>404 / SIGNAL LOST</span>
       </header>
-
-      <section className="not-found-stage" aria-labelledby="not-found-title">
-        <p className="not-found-kicker">LOST OPERATION / NO TARGET RETURNED</p>
-        <h1 id="not-found-title" tabIndex={-1}><span>NO</span><span>RESULT.</span></h1>
-        <div className="not-found-copy">
-          <p>This route returned no evidence. The system still knows the way back.</p>
-          <nav aria-label="Recovery routes">
-            <Link href="/" data-cursor="action" data-label="RETURN ↖"><span>Return to index</span><b aria-hidden="true">↖</b></Link>
-            <Link href="/#work" data-cursor="action" data-label="WORK ↓"><span>Inspect selected work</span><b aria-hidden="true">↓</b></Link>
-          </nav>
-        </div>
+      <section style={{maxWidth:1100}}>
+        <p style={{fontSize:10,letterSpacing:".16em",color:"#ff4a21"}}>UNRESOLVED COORDINATE</p>
+        <h1 style={{fontSize:"clamp(70px,15vw,220px)",lineHeight:.75,letterSpacing:"-.08em",margin:"24px 0"}}>NO<br/>SIGNAL.</h1>
+        <p style={{maxWidth:520,color:"#9e978f",lineHeight:1.55}}>The route disappeared. The mission did not. Return to the ANTARES index and continue from verified ground.</p>
+        <Link href="/" style={{display:"inline-block",marginTop:24,borderBottom:"1px solid #ff4a21",paddingBottom:6,fontSize:11,letterSpacing:".13em"}}>RETURN TO MISSION ↗</Link>
       </section>
-
-      <aside className="not-found-ledger" aria-label="Route recovery status">
-        <div><span>01 / REQUEST</span><strong>Unknown route</strong></div>
-        <div><span>02 / RESULT</span><strong>No target</strong></div>
-        <div><span>03 / RECOVERY</span><strong>Owned path</strong></div>
-      </aside>
-
-      <footer className="not-found-footer">
-        <span>ERRORS SHOULD END WITH A NEXT MOVE.</span>
-        <strong>ALMATY / 2026</strong>
-      </footer>
+      <footer style={{borderTop:"1px solid rgba(255,255,255,.15)",paddingTop:16,display:"flex",justifyContent:"space-between",fontSize:9,letterSpacing:".14em",color:"#89827a"}}><span>ALMATY / KAZAKHSTAN</span><span>ANTARES FTC</span></footer>
     </main>
   );
 }
