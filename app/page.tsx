@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { AntaresExperience } from "./components/AntaresExperience";
+import { AntaresExperienceV2 } from "./components/AntaresExperienceV2";
 
 export const metadata: Metadata = {
   title: "ANTARES — FTC Robotics · Almaty",
@@ -12,5 +12,5 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  return <AntaresExperience />;
+  return <AntaresExperienceV2 />;
 }
